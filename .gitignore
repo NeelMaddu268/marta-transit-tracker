@@ -1,0 +1,50 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+# iOS local secrets (real key injected at build time)
+Secrets.xcconfig
+**/Secrets.xcconfig
+!Secrets.example.xcconfig
+
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.xcuserstate
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Data — historical collection DB and GTFS static downloads
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/gtfs_static/
+*.zip
+
+# Logs
+*.log
+logs/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# OpenTripPlanner (Phase 4) — large binaries + built graph
+otp/*.jar
+otp/data/*.pbf
+otp/data/*.osm.pbf
+otp/data/*.zip
+otp/data/graph*.obj
+otp/data/streetGraph*.obj
+otp/data/otp-config.json.bak
