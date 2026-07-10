@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.personal.martatracker.collector</string>
+
+    <!-- Run the collector out of the project's venv as a module. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/neelmaddu/Marta/venv/bin/python</string>
+        <string>-m</string>
+        <string>collector.collector</string>
+    </array>
+
+    <!-- cwd so the `collector` package and .env resolve. -->
+    <key>WorkingDirectory</key>
+    <string>/Users/neelmaddu/Marta</string>
+
+    <!-- Start at login and keep it running: relaunch on crash or clean exit. -->
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <!-- Don't let a crash-loop hammer the CPU; wait 30s between relaunches. -->
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+
+    <!-- Treated as a background service by the scheduler. -->
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <!-- Collector logs (append across restarts). -->
+    <key>StandardOutPath</key>
+    <string>/Users/neelmaddu/Marta/logs/collector.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/neelmaddu/Marta/logs/collector.log</string>
+</dict>
+</plist>

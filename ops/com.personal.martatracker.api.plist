@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.personal.martatracker.api</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/neelmaddu/Marta/venv/bin/python</string>
+        <string>-m</string>
+        <string>collector.api</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/neelmaddu/Marta</string>
+
+    <!-- Serve on the LAN too, so a phone on the same WiFi can reach it. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>API_HOST</key>
+        <string>0.0.0.0</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>15</integer>
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/neelmaddu/Marta/logs/api.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/neelmaddu/Marta/logs/api.log</string>
+</dict>
+</plist>

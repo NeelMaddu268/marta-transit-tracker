@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.personal.martatracker.otp</string>
+
+    <!-- OpenTripPlanner server (Trip tab). Heavy (~6GB); loads the graph ~30s. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/neelmaddu/Marta/otp/run-otp.sh</string>
+        <string>serve</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/neelmaddu/Marta/otp</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>OTP_HEAP</key>
+        <string>6G</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <!-- Graph load is slow; don't hammer relaunches. -->
+    <key>ThrottleInterval</key>
+    <integer>60</integer>
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/neelmaddu/Marta/logs/otp-serve.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/neelmaddu/Marta/logs/otp-serve.log</string>
+</dict>
+</plist>
