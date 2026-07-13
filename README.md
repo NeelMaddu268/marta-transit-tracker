@@ -6,6 +6,16 @@ data to eventually power lateness predictions.
 
 Not affiliated with MARTA — uses the public data only, no branding.
 
+## Screenshots
+
+| Live system map | Departures with bay guidance |
+|---|---|
+| <img src="docs/screenshots/map-live.png" width="380"> | <img src="docs/screenshots/departures-bays.png" width="380"> |
+
+| Commute card, alerts & confidence | Single-route live map |
+|---|---|
+| <img src="docs/screenshots/commute-alerts.png" width="380"> | <img src="docs/screenshots/route-map.png" width="380"> |
+
 ## Status
 
 | Phase | What | State |
