@@ -1,0 +1,222 @@
+[
+{
+"name": "Airport Station",
+"lat": 33.640806,
+"lon": -84.446214
+},
+{
+"name": "Arts Center Station",
+"lat": 33.78918,
+"lon": -84.38728
+},
+{
+"name": "Ashby Station",
+"lat": 33.75645,
+"lon": -84.41728
+},
+{
+"name": "Avondale Station",
+"lat": 33.77535,
+"lon": -84.28191
+},
+{
+"name": "Bankhead Station",
+"lat": 33.77231,
+"lon": -84.4289
+},
+{
+"name": "Brookhaven-Oglethorpe Station",
+"lat": 33.85999,
+"lon": -84.3394
+},
+{
+"name": "Buckhead Station",
+"lat": 33.84773,
+"lon": -84.36766
+},
+{
+"name": "Chamblee Station",
+"lat": 33.88786,
+"lon": -84.30566
+},
+{
+"name": "Civic Center Station",
+"lat": 33.76634,
+"lon": -84.38749
+},
+{
+"name": "College Park Station",
+"lat": 33.65159,
+"lon": -84.44878
+},
+{
+"name": "Decatur Station",
+"lat": 33.77468,
+"lon": -84.29553
+},
+{
+"name": "Doraville Station",
+"lat": 33.90296,
+"lon": -84.28026
+},
+{
+"name": "Dunwoody Station",
+"lat": 33.92124,
+"lon": -84.34427
+},
+{
+"name": "East Lake Station",
+"lat": 33.76518,
+"lon": -84.31315
+},
+{
+"name": "East Point Station",
+"lat": 33.67753,
+"lon": -84.4405
+},
+{
+"name": "Edgewood-Candler Park Station",
+"lat": 33.76193,
+"lon": -84.33962
+},
+{
+"name": "Fairburn Park & Ride",
+"lat": 33.533115,
+"lon": -84.574921
+},
+{
+"name": "Five Points Station",
+"lat": 33.75387,
+"lon": -84.39157
+},
+{
+"name": "Garnett Station",
+"lat": 33.748544,
+"lon": -84.395888
+},
+{
+"name": "Georgia State Station",
+"lat": 33.75007,
+"lon": -84.38587
+},
+{
+"name": "Hamilton E Holmes Station",
+"lat": 33.75448,
+"lon": -84.47003
+},
+{
+"name": "Indian Creek Station",
+"lat": 33.76982,
+"lon": -84.22953
+},
+{
+"name": "Inman Park-Reynoldstown Station",
+"lat": 33.75753,
+"lon": -84.35265
+},
+{
+"name": "Kensington Station",
+"lat": 33.77262,
+"lon": -84.25192
+},
+{
+"name": "King Memorial Station",
+"lat": 33.7499,
+"lon": -84.3758
+},
+{
+"name": "Lakewood-Ft Mcpherson Station",
+"lat": 33.70042,
+"lon": -84.42883
+},
+{
+"name": "Lenox Station",
+"lat": 33.8454,
+"lon": -84.35811
+},
+{
+"name": "Lindbergh Center Station",
+"lat": 33.82291,
+"lon": -84.36947
+},
+{
+"name": "Mansell Park & Ride",
+"lat": 34.03876,
+"lon": -84.31308
+},
+{
+"name": "Medical Center Station",
+"lat": 33.91072,
+"lon": -84.35145
+},
+{
+"name": "Midtown Station",
+"lat": 33.78107,
+"lon": -84.38632
+},
+{
+"name": "North Ave Station",
+"lat": 33.77179,
+"lon": -84.38709
+},
+{
+"name": "North Springs Station",
+"lat": 33.94498,
+"lon": -84.3572
+},
+{
+"name": "Oakland City Station",
+"lat": 33.71716,
+"lon": -84.42507
+},
+{
+"name": "Panola Park & Ride - Xpress",
+"lat": 33.70196,
+"lon": -84.17333
+},
+{
+"name": "Peachtree Center Station",
+"lat": 33.759684,
+"lon": -84.387598
+},
+{
+"name": "Riverdale Park & Ride",
+"lat": 33.56729,
+"lon": -84.40376
+},
+{
+"name": "Sandy Springs Station",
+"lat": 33.93174,
+"lon": -84.35096
+},
+{
+"name": "Sec District Station",
+"lat": 33.75618,
+"lon": -84.39725
+},
+{
+"name": "South Fulton-Union City Park & Ride",
+"lat": 33.58709,
+"lon": -84.51246
+},
+{
+"name": "Vine City Station",
+"lat": 33.75657,
+"lon": -84.404
+},
+{
+"name": "West End Station",
+"lat": 33.73612,
+"lon": -84.41364
+},
+{
+"name": "West Lake Station",
+"lat": 33.75327,
+"lon": -84.4453
+},
+{
+"name": "Windward Park & Ride",
+"lat": 34.08604,
+"lon": -84.26063
+}
+]

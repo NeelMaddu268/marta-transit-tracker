@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Standard bundle keys (substituted from build settings at build time). -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundleDisplayName</key>
+    <string>MARTA Tracker</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- Rail API key, injected at build time from Secrets.xcconfig. Never hardcoded. -->
+    <key>MartaRailAPIKey</key>
+    <string>$(MARTA_RAIL_API_KEY)</string>
+
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Shows your location on the map so you can see nearby buses and trains.</string>
+
+    <!-- Base URL of the local Python collector service (Phase 3 history stats).
+         Simulator reaches the host's loopback directly. -->
+    <!-- Mac's LAN IP so a physical phone on the same WiFi can reach the service.
+         Also works from the simulator. Update if the Mac's IP changes. -->
+    <key>MartaServiceBaseURL</key>
+    <string>http://192.168.1.123:8000</string>
+
+    <!-- MARTA's rail endpoint is HTTPS on a non-standard port and can present an
+         older TLS configuration; scope an exception to just that domain.
+         NSAllowsLocalNetworking permits plain HTTP to the local service. -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>itsmarta.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.0</string>
+            </dict>
+        </dict>
+    </dict>
+
+    <key>UILaunchScreen</key>
+    <dict/>
+</dict>
+</plist>
