@@ -6,6 +6,12 @@ data to eventually power lateness predictions.
 
 Not affiliated with MARTA — uses the public data only, no branding.
 
+## Demo
+
+<img src="docs/demo.gif" width="340" alt="Live demo: real-time map, departure boards with countdowns, commute card, and single-route view">
+
+*Live data: the system map with rail lines, Five Points departures counting down each second, a saved commute with bay guidance, and a single-route live view. ([mp4 version](docs/demo.mp4))*
+
 ## Screenshots
 
 | Live system map | Departures with bay guidance |
